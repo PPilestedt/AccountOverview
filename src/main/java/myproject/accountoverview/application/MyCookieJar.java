@@ -17,7 +17,7 @@ public class MyCookieJar implements CookieJar {
     @Override
     public List<Cookie> loadForRequest(@NotNull HttpUrl httpUrl) {
         List<Cookie> cookies = cookieStore.get(httpUrl.host());
-        return cookies != null ? cookies : new ArrayList<Cookie>();
+        return cookies != null ? cookies : new ArrayList<>();
     }
 
     @Override
