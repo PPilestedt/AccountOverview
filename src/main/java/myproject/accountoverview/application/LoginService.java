@@ -23,7 +23,7 @@ public class LoginService {
 
     /**
      * Handles the initial http request and the creation of the bankid qr-code string.
-     * @return
+     * @return QR-code autostart URL
      */
     public String login() {
         if(!okhttp.loginAnonymous() || !okhttp.authenticationStart()){
